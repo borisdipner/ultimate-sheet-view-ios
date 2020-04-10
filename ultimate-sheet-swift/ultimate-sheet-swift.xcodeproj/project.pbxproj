@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1432C235243E3CE400057764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432C234243E3CE400057764 /* AppDelegate.swift */; };
 		1432C237243E3CE400057764 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432C236243E3CE400057764 /* SceneDelegate.swift */; };
-		1432C239243E3CE400057764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432C238243E3CE400057764 /* ViewController.swift */; };
+		1432C239243E3CE400057764 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432C238243E3CE400057764 /* SheetViewController.swift */; };
 		1432C23C243E3CE400057764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1432C23A243E3CE400057764 /* Main.storyboard */; };
 		1432C23E243E3CE800057764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1432C23D243E3CE800057764 /* Assets.xcassets */; };
 		1432C241243E3CE800057764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1432C23F243E3CE800057764 /* LaunchScreen.storyboard */; };
+		1432C24A243E3EAC00057764 /* SelfSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432C248243E3EAC00057764 /* SelfSheetViewController.swift */; };
+		1432C24B243E3EAC00057764 /* SelfSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1432C249243E3EAC00057764 /* SelfSheetViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1432C231243E3CE400057764 /* ultimate-sheet-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ultimate-sheet-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1432C234243E3CE400057764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1432C236243E3CE400057764 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1432C238243E3CE400057764 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1432C238243E3CE400057764 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 		1432C23B243E3CE400057764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1432C23D243E3CE800057764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1432C240243E3CE800057764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1432C242243E3CE800057764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1432C248243E3EAC00057764 /* SelfSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSheetViewController.swift; sourceTree = "<group>"; };
+		1432C249243E3EAC00057764 /* SelfSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfSheetViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,31 @@
 			children = (
 				1432C234243E3CE400057764 /* AppDelegate.swift */,
 				1432C236243E3CE400057764 /* SceneDelegate.swift */,
-				1432C238243E3CE400057764 /* ViewController.swift */,
+				1432C24C243E3EB600057764 /* UltimateSheet */,
 				1432C23A243E3CE400057764 /* Main.storyboard */,
 				1432C23D243E3CE800057764 /* Assets.xcassets */,
 				1432C23F243E3CE800057764 /* LaunchScreen.storyboard */,
 				1432C242243E3CE800057764 /* Info.plist */,
 			);
 			path = "ultimate-sheet-swift";
+			sourceTree = "<group>";
+		};
+		1432C24C243E3EB600057764 /* UltimateSheet */ = {
+			isa = PBXGroup;
+			children = (
+				1432C238243E3CE400057764 /* SheetViewController.swift */,
+				1432C24D243E692A00057764 /* Self */,
+			);
+			path = UltimateSheet;
+			sourceTree = "<group>";
+		};
+		1432C24D243E692A00057764 /* Self */ = {
+			isa = PBXGroup;
+			children = (
+				1432C248243E3EAC00057764 /* SelfSheetViewController.swift */,
+				1432C249243E3EAC00057764 /* SelfSheetViewController.xib */,
+			);
+			path = Self;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1432C241243E3CE800057764 /* LaunchScreen.storyboard in Resources */,
+				1432C24B243E3EAC00057764 /* SelfSheetViewController.xib in Resources */,
 				1432C23E243E3CE800057764 /* Assets.xcassets in Resources */,
 				1432C23C243E3CE400057764 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1432C239243E3CE400057764 /* ViewController.swift in Sources */,
+				1432C239243E3CE400057764 /* SheetViewController.swift in Sources */,
 				1432C235243E3CE400057764 /* AppDelegate.swift in Sources */,
 				1432C237243E3CE400057764 /* SceneDelegate.swift in Sources */,
+				1432C24A243E3EAC00057764 /* SelfSheetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
